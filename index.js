@@ -15,8 +15,13 @@ client.on('ready', () => {
 })
 
 client.on('messageCreate', (message) => {
-    if (message.content == 'marci'){
-        message.reply('shut the fuck up bitch')
+    if (message.content == 'marci' || message.content == 'Marci'){
+        message.reply(`shut up bitch`)
+    }
+
+    if (message.content == 'rule34' || message.content == 'marci rule 34' || message.content == 'marci rule34' || 
+        message.content == 'Marci rule34' || message.content == 'Marci rule 34'){
+        message.reply(`shut up philip`)
     }
 })
 
