@@ -14,14 +14,6 @@ client.on('ready', () => {
 })
 
 client.on('messageCreate', (message) => {
-    if (message.content == 'rule34' || message.content == 'rule 34' ||
-        message.content == 'Rule34' || message.content == 'Rule 34' ||
-        message.content == 'R34' || message.content == 'r34' ||
-        message.content == 'Marci rule 34' || message.content == 'marci rule 34' || 
-        message.content == 'Marci rule34' || message.content == 'Marci rule 34'){
-        message.channel.send(`https://cdn.discordapp.com/attachments/941366925643120682/942368932893970432/index_2.gif`)
-    }
-
     if (message.content == 'tetris' || message.content == 'Tetris'){
         message.channel.send(`do not play tetris`)
     }
@@ -86,6 +78,7 @@ client.on('messageCreate', (message) => {
                         'https://media.discordapp.net/attachments/445241749229535233/941801352093372426/unknown.png',
                         'https://media.discordapp.net/attachments/445241749229535233/941801397895200798/unknown.png',
                         'https://media.discordapp.net/attachments/445241749229535233/941800927151661177/unknown.png',
+                        'https://cdn.discordapp.com/attachments/335051631810838538/942311626734968832/squl4h.mp4',
                         ]
         const randomMessage = messages[Math.floor(Math.random() * messages.length)];
         message.channel.send(randomMessage)
@@ -100,9 +93,38 @@ client.on('messageCreate', (message) => {
     */
 
     if (message.content == 'marci' || message.content == 'Marci'){
-        const messages = ['shut up bitch', 'bet those shoes raggedy', 'no', '🤔', '🗿', 'i will brutally beat you to death','https://cdn.discordapp.com/attachments/941366925643120682/942365801124593744/longer_marci.gif', ]
+        const messages = [
+                        'shut up bitch', 'bet those shoes raggedy', 'no', 'shut', 'i will press R',
+                        '🤔', '🗿', 'i will brutally beat you to death',
+                        'https://cdn.discordapp.com/attachments/941366925643120682/942365801124593744/longer_marci.gif',
+                        'https://media.discordapp.net/attachments/941366925643120682/943434746606805012/Netflix_Anime_-_Marci_is_Best_Girl_DOTA_Dragons_Blood_Netflix_Anime_we9qBLRWSDs_-_1342x755_-_0m46s.png?width=1191&height=670',
+                        'https://media.discordapp.net/attachments/941366925643120682/943436027773730866/9b2.gif',
+                        'https://cdn.discordapp.com/attachments/941366925643120682/943450144836313118/marki.mp4',
+                        'https://media.discordapp.net/attachments/941366925643120682/943450028062683176/ezgif-2-339eb2b366.gif?width=1191&height=670',
+                        'https://media.discordapp.net/attachments/941366925643120682/943454781459034122/mar.png',
+                        ]
         const randomMessage = messages[Math.floor(Math.random() * messages.length)];
         message.channel.send(randomMessage)
+    }
+
+    if (message.content == 'rule34' || message.content == 'rule 34' ||
+        message.content == 'Rule34' || message.content == 'Rule 34' ||
+        message.content == 'R34' || message.content == 'r34' ||
+        message.content == 'Marci rule 34' || message.content == 'Marci Rule 34' || 
+        message.content == 'Marci rule34' || message.content == 'Marci Rule34' ||
+        message.content == 'marci rule 34' || message.content == 'marci rule 34' || 
+        message.content == 'marci rule34' || message.content == 'marci rule34'){
+
+        const messages = [
+                        'https://cdn.discordapp.com/attachments/941366925643120682/942368932893970432/index_2.gif',
+                        'https://media.discordapp.net/attachments/941366925643120682/943454249927446548/marci-dota2.gif',
+                        ]
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        message.channel.send(randomMessage)
+    }
+
+    if (message.content == 'https://cdn.discordapp.com/attachments/941366925643120682/943450144836313118/marki.mp4'){
+        message.channel.send('Me')
     }
 
     if (message.content == 'who eat da chicken'){
